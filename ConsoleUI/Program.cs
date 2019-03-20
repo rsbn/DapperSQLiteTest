@@ -16,7 +16,7 @@ namespace ConsoleUI
             List<PersonModel> list = DataAccess.GetPeople();
             foreach (var p in list)
             {
-                Console.WriteLine($"{p.FisrtName} {p.LastName} - {p.Car?.Model} {p.Car?.Year}");
+                Console.WriteLine($"{p.FirstName} {p.LastName} - {p.Car?.Model} {p.Car?.Year}");
             }
 
             Console.ReadLine();
